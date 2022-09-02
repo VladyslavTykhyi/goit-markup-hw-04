@@ -133,6 +133,11 @@ img {
 .logo-accent {
   color: var(--accent-txt-cl);
 }
+.icon-header {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* Main; Hero */
 .hero {
   background-color: var(--main-bg-cl);
@@ -276,11 +281,20 @@ img {
   height: 44px;
   background-color: transparent;
   border-radius: 50%;
+  fill: #afb1b8;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-txt-cl);
+  fill: var(--hero-txt-cl);
 }
 .social-link-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+}
+.social-link-icon:hover,
+.social-link-icon:focus {
+  fill: var(--hero-txt-cl);
 }
 
 /* Our clients */
@@ -304,6 +318,11 @@ img {
   border: 1px solid #afb1b8;
   fill: #afb1b8;
 }
+.clients-link:hover,
+.clients-link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
 
 /* Footer */
 .footer {
@@ -313,7 +332,7 @@ img {
 }
 .general-footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 70px;
 }
 .social-links-footer {
@@ -330,6 +349,10 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+.social-footer-icon:hover,
+.social-footer-icon:focus {
+  background-color: #2196f3;
+}
 .social-footer-list {
   display: flex;
   justify-content: space-between;
@@ -341,6 +364,12 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--hero-txt-cl);
+  margin-bottom: 20px;
+}
+.footer-icon {
+  display: block;
+  fill: var(--hero-txt-cl);
 }
 .logo-footer {
   color: var(--hero-txt-cl);
